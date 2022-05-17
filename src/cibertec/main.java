@@ -18,6 +18,8 @@ import javax.swing.UIManager;
 import javax.swing.JCheckBoxMenuItem;
 import javax.swing.JButton;
 import javax.swing.JMenu;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class main extends JFrame {
 	
@@ -114,6 +116,15 @@ public class main extends JFrame {
 		
 		mnNewMenu = new JMenu("Archivo");
 		menuBar.add(mnNewMenu);
+		
+		JMenuItem btnSalir = new JMenuItem("Salir");
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+		btnSalir.setHorizontalAlignment(SwingConstants.LEFT);
+		mnNewMenu.add(btnSalir);
 		
 		mnNewMenu_1 = new JMenu("Mantenimiento");
 		menuBar.add(mnNewMenu_1);
