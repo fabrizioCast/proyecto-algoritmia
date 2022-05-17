@@ -102,7 +102,7 @@ public class main extends JFrame {
 	 * Create the frame.
 	 */
 	public main() {
-		setTitle("Ventas");
+		setTitle("Sistemas de venta");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 698, 422);
 		contentPane = new JPanel();
